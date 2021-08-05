@@ -77,6 +77,8 @@ h2{
     display:flex;
     flex-direction: column;
     background-image: url("../images/galaxy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding:2%;
 }
 .site-name{
@@ -135,10 +137,12 @@ nav a{
 }
 .main-container a{
     background-color: #2CDA9D;
+    color:#564d65;
+    font-weight: bold;
     border-radius: 10%;
     border: 3px solid #1A181B;
     text-decoration: none; 
-    width:25%;
+    width:26%;
     margin:5% 0;
 }
 .gallery img{
@@ -169,4 +173,25 @@ nav a{
     flex-direction: column;
     align-content: center;
     width:22%;
+}
+footer{
+    background-image: url(../images/galaxy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:5%;
+}
+footer div{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+footer a{
+    background-color: #2CDA9D;
+    color:#564d65;
+    font-weight: bold;
+    border-radius: 10%;
+    border: 3px solid #1A181B;
+    text-decoration: none;
+    width: 6%;
 }
