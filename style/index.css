@@ -1,1 +1,160 @@
-/* Add CSS styling here */
+/* Add CSS styling here *//* CSS Reset above */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    border: 1px solid gray;
+}
+
+/* General Styles */
+html{
+    font-size: 62.5%;
+    font-family: 'Chakra Petch', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #FBFFFB;
+    color: #4f4f4f;
+}
+h1{
+    font-size:5rem;
+    color:#05F140;
+}
+h2{
+    font-size:3rem;
+    color:#05F140;
+}
+
+
+
+/* header styles */
+.top{
+    display:flex;
+    flex-direction: column;
+    background-image: url("../images/galaxy.jpg");
+    padding:2%;
+}
+.site-name{
+    padding:0 3%;
+}
+nav{
+   padding: 0 5%;
+
+}
+nav a{
+    font-size: 2rem;
+    padding:.5%;
+    background-color:#05F140;
+    border-radius:15%;
+    color:#564d65;
+    font-weight:bold;
+    text-decoration: none;
+    border: 3px solid #1A181B;
+}
+/*Helper Classes*/
+.bgimg{
+    background-image:url("../images/galaxy.jpg");
+    /* background-size:cover; */
+    background-repeat:no-repeat;
+}
+/* content styles */
+
+.main-container{
+    height:60vh;
+    background-color:#564D65 ;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.galaxy{
+    border-radius: 10%;
+    margin:1%;
+    width:100%;
+    height:95%;
+    
+}
+.text div{
+    width:70%;
+    font-size:3rem;
+    color:#05F140;
+    border: 3px solid red;
+    margin-left:10%;
+}
+.main-container h2{
+    font-size:4.5rem;
+    padding: 2%;
+}
+.main-container a{
+    background-color: #2CDA9D;
+    width: 30%;
+    border-radius: 10%;
+    border: 3px solid #1A181B;
+    
+}
+}
+.gallery img{
+    border: 3px solid #2CDA9D;
+    border-radius:10%;
+}
+.gallery p{
+    text-align: center;
+    color:#05F140;
+    width:100%;
+
+}
+
+.container-3{
+    width:100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:2%;
+    display:flex;
+    justify-content: space-around;
+    background-color:#564D65;
+}
