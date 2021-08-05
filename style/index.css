@@ -47,7 +47,7 @@ table {
     padding:0;
     margin:0;
     max-width:100%;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 }
 
 /* General Styles */
@@ -114,32 +114,35 @@ nav a{
 }
 .galaxy{
     border-radius: 10%;
+    border:3px solid #1A181B;
     margin:1%;
-    width:100%;
+    margin-left:4%;
+    width:97%;
     height:95%;
     
 }
 .text div{
+    display:flex;
+    flex-direction: column;
     width:70%;
     font-size:3rem;
     color:#05F140;
-    border: 3px solid red;
     margin-left:10%;
+   
 }
 .main-container h2{
     font-size:4.5rem;
-    padding: 2%;
 }
 .main-container a{
     background-color: #2CDA9D;
-    width: 30%;
     border-radius: 10%;
     border: 3px solid #1A181B;
-    
-}
+    text-decoration: none; 
+    width:25%;
+    margin:5% 0;
 }
 .gallery img{
-    border: 3px solid #2CDA9D;
+    border: 3px solid #1A181B;
     border-radius:10%;
 }
 .gallery p{
@@ -147,6 +150,9 @@ nav a{
     color:#05F140;
     width:100%;
 
+}
+.container-3 img{
+    width:100%;
 }
 
 .container-3{
@@ -157,4 +163,10 @@ nav a{
     display:flex;
     justify-content: space-around;
     background-color:#564D65;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width:22%;
 }
