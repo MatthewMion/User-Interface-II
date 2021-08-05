@@ -61,6 +61,9 @@ body{
     background-color: #FBFFFB;
     color: #4f4f4f;
 }
+header{
+    border-bottom:3px solid #2CDA9D;
+}
 h1{
     font-size:5rem;
     color:#05F140;
@@ -91,7 +94,7 @@ nav{
 nav a{
     font-size: 2rem;
     padding:.5%;
-    background-color:#05F140;
+    background-color:#2CDA9D;
     border-radius:15%;
     color:#564d65;
     font-weight:bold;
@@ -178,6 +181,7 @@ footer{
     background-image: url(../images/galaxy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-top:3px solid #2CDA9D;
     padding:5%;
 }
 footer div{
