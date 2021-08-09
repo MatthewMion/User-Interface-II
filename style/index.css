@@ -1,4 +1,4 @@
-/* Add CSS styling here *//* CSS Reset above */
+  /* Add CSS styling here *//* CSS Reset above */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,7 +47,7 @@ table {
     padding:0;
     margin:0;
     max-width:100%;
-    /* border: 1px solid gray; */
+    border: 1px solid gray;
 }
 
 /* General Styles */
@@ -76,7 +76,7 @@ h2{
 
 
 /* header styles */
-.top{
+#top{
     display:flex;
     flex-direction: column;
     background-image: url("../images/galaxy.jpg");
@@ -104,7 +104,7 @@ nav a{
 /*Helper Classes*/
 .bgimg{
     background-image:url("../images/galaxy.jpg");
-    /* background-size:cover; */
+    background-size:cover;
     background-repeat:no-repeat;
 }
 /* content styles */
@@ -114,8 +114,9 @@ nav a{
     background-color:#564D65 ;
     display:flex;
     justify-content: center;
-    align-content: center;
+    /* align-content: center; */
     align-items: center;
+    
 }
 .galaxy{
     border-radius: 10%;
@@ -124,6 +125,7 @@ nav a{
     margin-left:4%;
     width:97%;
     height:95%;
+    
     
 }
 .text div{
@@ -148,11 +150,11 @@ nav a{
     width:26%;
     margin:5% 0;
 }
-.gallery img{
+#gallery img{
     border: 3px solid #1A181B;
     border-radius:10%;
 }
-.gallery p{
+#gallery p{
     text-align: center;
     color:#05F140;
     width:100%;
@@ -163,18 +165,15 @@ nav a{
 }
 
 .container-3{
-    width:100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding:2%;
     display:flex;
     justify-content: space-around;
     background-color:#564D65;
+    width:100%;
+    padding:2%;
 }
 .img{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    /* display: flex;
+    flex-direction: column; */
     width:22%;
 }
 footer{
@@ -198,4 +197,62 @@ footer a{
     border: 3px solid #1A181B;
     text-decoration: none;
     width: 6%;
+}
+
+
+/* Media Queries go here */
+/* 
+desktop first design - means we scale down - we use max-width
+mobile first design - means we scale up - we use max-width
+ */
+
+
+/* tablet view 800px */
+/* when the screen size reaches 800px or smaller these rules apply */
+@media(max-width:800px){
+
+}
+
+
+/* mobile view 500px */
+/* when the screen size reaches 500px or smaller these rules apply */
+@media(max-width:500px){
+    h1{
+        width:100%;
+        text-align: center;
+    }
+    nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a{
+        width:35%;
+        text-align: center;
+    }
+    .main-container{
+        display:flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+    }
+    .galaxy{
+        width:85%;
+        height:75%;
+    }
+    .text div{
+        display:flex;
+        align-items: center;
+        margin:0;
+        width:100%;
+    }
+    .text h2{
+        text-align: center;
+        width: 100%;    
+    }
+    .text a{
+        text-align: center;
+        width:40%;    
+    }
+    #content{
+    }
 }
